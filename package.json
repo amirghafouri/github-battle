@@ -1,0 +1,23 @@
+{
+  "name": "github-battle",
+  "version": "1.0.0",
+  "description": "Web application to compare GitHub user profiles. Uses React, Webpack, Babel, React Props, React Roluter v4, Axios",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amirghafouri/github-battle.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amirghafouri/github-battle/issues"
+  },
+  "homepage": "https://github.com/amirghafouri/github-battle#readme",
+  "dependencies": {
+    "react": "16.2.0",
+    "react-dom": "16.2.0"
+  }
+}
