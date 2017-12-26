@@ -4,6 +4,7 @@
   "description": "Web application to compare GitHub user profiles. Uses React, Webpack, Babel, React Props, React Roluter v4, Axios",
   "main": "index.js",
   "scripts": {
+    "format": "./node_modules/.bin/prettier --single-quote --no-semi --write *.js '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +20,8 @@
   "dependencies": {
     "react": "16.2.0",
     "react-dom": "16.2.0"
+  },
+  "devDependencies": {
+    "prettier": "1.9.2"
   }
 }
