@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "format": "./node_modules/.bin/prettier --single-quote --no-semi --write *.js '**/*.js'",
+    "start": "webpack-dev-server --open",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "babel": {
+    "presets": ["env", "react"]
   },
   "repository": {
     "type": "git",
