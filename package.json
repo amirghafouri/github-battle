@@ -9,7 +9,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "babel": {
-    "presets": ["env", "react"]
+    "presets": [
+      "env",
+      "react"
+    ]
   },
   "repository": {
     "type": "git",
@@ -22,6 +25,7 @@
   },
   "homepage": "https://github.com/amirghafouri/github-battle#readme",
   "dependencies": {
+    "prop-types": "15.6.0",
     "react": "16.2.0",
     "react-dom": "16.2.0"
   },

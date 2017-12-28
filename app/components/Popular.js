@@ -1,4 +1,5 @@
 var React = require('react')
+var PropTypes = require('prop-types')
 
 function SelectLanguage(props) {
   var languages = ['All', 'JavaScript', 'Ruby', 'Java', 'CSS', 'Python']
@@ -22,6 +23,11 @@ function SelectLanguage(props) {
       })}
     </ul>
   )
+}
+
+SelectLanguage.propTypes = {
+  selectedLanguage: PropTypes.string.isRequired,
+  onSelect: PropTypes.func.isRequired
 }
 
 class Popular extends React.Component {
