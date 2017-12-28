@@ -2,12 +2,12 @@ var React = require('react')
 
 class Popular extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       selectedLanguage: 'All'
     }
 
-    this.updateLanguage = this.updateLanguage.bind(this);
+    this.updateLanguage = this.updateLanguage.bind(this)
   }
 
   updateLanguage(lang) {
@@ -23,10 +23,21 @@ class Popular extends React.Component {
 
     return (
       <div>
-        <p>selectedLanguage: {this.state.selectedLanguage}</p>
-        <ul className='languages'>
-          {languages.map((lang) => {
-            return <li onClick={this.updateLanguage.bind(null, lang)} key={lang}>{lang}</li>
+        <ul className="languages">
+          {languages.map(lang => {
+            return (
+              <li
+                style={
+                  lang === this.state.selectedLanguage
+                    ? { color: '#d0021b' }
+                    : null
+                }
+                onClick={this.updateLanguage.bind(null, lang)}
+                key={lang}
+              >
+                {lang}
+              </li>
+            )
           })}
         </ul>
       </div>
