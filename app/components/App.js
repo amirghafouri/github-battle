@@ -15,13 +15,15 @@ class App extends React.Component {
         <div>
           <Nav />
           <Switch>
-            <Route exact path='/' component={Home} />
-            <Route path='/popular' component={Popular} />
-            <Route exact path='/battle' component={Battle} />
-            <Route path='/battle/results' component={Results} />
-            <Route render={() => {
-              return <p>Not Found</p>
-            }} />
+            <Route exact path="/" component={Home} />
+            <Route path="/popular" component={Popular} />
+            <Route exact path="/battle" component={Battle} />
+            <Route path="/battle/results" component={Results} />
+            <Route
+              render={() => {
+                return <p>Not Found</p>
+              }}
+            />
           </Switch>
         </div>
       </BrowserRouter>
